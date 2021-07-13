@@ -79,7 +79,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun sendHome() {
-        Intent(this, MainActivity::class.java).apply {
+        Intent(this, HomeActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         }.also { startActivity(it) }
     }
